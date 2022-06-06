@@ -1,0 +1,42 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #ff00ff;
+  width: 400px;
+  max-height: 100px;
+  min-height: 50px;
+  padding: 5px 10px;
+  gap: 20px;
+
+  &--done {
+    background-color: #ff00ff;
+    //text-decoration: line-through;
+  }
+
+  &__title {
+    color: aqua;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 5px;
+    cursor: pointer;
+
+    &--delete {
+      border: 2px solid red;
+      color: aqua;
+    }
+  }
+}
